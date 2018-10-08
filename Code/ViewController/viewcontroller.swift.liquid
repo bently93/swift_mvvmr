@@ -1,0 +1,38 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+
+final class {{ module_info.name }}ViewController: UIViewController {
+
+    // MARK: - Properties
+
+    private let viewModel: {{ module_info.name }}ViewModelProtocol?
+
+    // MARK: - Lifecycle
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        viewModel = {{ module_info.name }}ViewModel(roter: self)
+
+        setupView()
+    }
+}
+
+// MARK: - Private functions
+extension {{ module_info.name }}ViewController {
+    private func setupView() {
+        guard let viewModel = self.viewModel else {
+            return asserFailure("viewModle dont set")
+        }
+    }
+}
+
+extension {{ module_info.name }}ViewController: RouterProtocol {
+    
+}

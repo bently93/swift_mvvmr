@@ -1,0 +1,37 @@
+//
+//  {{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+protocol {{ module_info.name }}ViewModelProtocol {
+    // MARK: - Properties
+
+    // MARK: - Initialization
+	init(router: RouterProtocol)
+}
+
+final class {{ module_info.name }}ViewModel: {{ module_info.name }}ViewModelProtocol {
+	// MARK: - Properties
+	private let router: RouterProtocol
+
+	// MARK: - Initialization
+	init(router: RouterProtocol){
+		self.router = router
+		setupView()
+	}	
+}
+
+// MARK: - Ovveride functions
+extension {{ module_info.name }}ViewModel{
+	
+}
+
+// MARK: - Private functions
+extension {{ module_info.name }}ViewModel{
+	func setupView() {
+
+	}
+}

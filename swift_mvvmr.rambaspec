@@ -1,0 +1,19 @@
+# Template information section
+name: "swiftymvvmw"
+summary: "Swift MVVM+Wireframe module template."
+author: "Jorge Lucena"
+version: "0.1.0"
+license: "MIT"
+
+# The declarations for code files
+
+code_files:
+# View layer
+- {name: ViewController/ViewController.swift, path: Code/ViewController/viewcontroller.swift.liquid}
+- {name: ViewController/ViewController.storyboard, path: Code/ViewController/viewController.storyboard.liquid}
+
+# ViewModel layer
+- {name: ViewModel/ViewModel.swift, path: Code/ViewModel/viewmodel.swift.liquid}
+
+# Router layer
+#- {name: Router/Router.swift, path: Code/Router/router.swift.liquid}
